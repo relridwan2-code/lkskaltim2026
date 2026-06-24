@@ -1,0 +1,6 @@
+Arsitektur Sistem Kaltim Smart Platform
+Sistem ini menggunakan standar keamanan cloud dengan pemisahan area:
+Public Layer: Menggunakan Load Balancer untuk menerima trafik internet.
+App Layer: Menjalankan aplikasi berbasis Docker pada Amazon EC2.
+Data Layer (Private Subnet): RDS untuk database (MySQL) dan S3 untuk penyimpanan aset dengan enkripsi AES-256.
+Keamanan: Menggunakan Security Group untuk membatasi akses antar komponen.
