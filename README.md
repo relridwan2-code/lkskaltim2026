@@ -1,16 +1,17 @@
-# LKS Kaltim 2026 - Smart Platform
+# LKS Kaltim 2026 - Cloud Infrastructure
 
-## Deskripsi
-Aplikasi backend untuk Kaltim Smart Platform yang dibangun dengan Node.js, Express, dan Docker.
+**Nama Peserta:** Farel Muhamad Ridwan
+**Bidang:** Teknik Jaringan Komputer dan Telekomunikasi
 
-## Struktur Proyek
-- `/app`: Source code backend.
-- `/docker`: Konfigurasi Dockerfile.
-- `/terraform`: Infrastruktur sebagai kode (IaC).
+## Deskripsi Proyek
+Repositori ini berisi implementasi infrastruktur cloud menggunakan Terraform dan containerisasi aplikasi menggunakan Docker.
+
+## Struktur Direktori
+- `/app`: Kode aplikasi backend.
+- `/docker`: Dockerfile dan konfigurasi container.
+- `/terraform`: Skrip Infrastructure as Code (main.tf, etc).
 - `/docs`: Dokumentasi arsitektur.
 
-## Cara Menjalankan
-1. Pastikan Docker Desktop sudah aktif.
-2. Jalankan perintah di terminal (root directory):
-```bash
-   docker-compose up --build
+## Cara Deployment
+1. Pastikan AWS CLI dan Terraform terinstal.
+2. Jalankan `terraform init` dan `terraform apply` di direktori `/terraform`.
